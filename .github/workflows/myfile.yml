@@ -12,7 +12,7 @@ jobs:
       - name: Build & Deploy
         env:
           PRIVATE_KEY: >-
-            ${{ secrets.ssh-ed25519
+            ${{ ssh-ed25519
             AAAAC3NzaC1lZDI1NTE5AAAAIIsxbfm/4RXyF/jTCg3cf0xcnAqBq8P8fuEERZC5Grfk
             sziqbal62@gmail.com }}
           HOSTNAME: '${{secrets.3.129.25.5}}'
