@@ -12,9 +12,20 @@ jobs:
       - name: Build & Deploy
         env:
           PRIVATE_KEY: >-
-            ${{ ssh-ed25519
-            AAAAC3NzaC1lZDI1NTE5AAAAIIsxbfm/4RXyF/jTCg3cf0xcnAqBq8P8fuEERZC5Grfk
-            sziqbal62@gmail.com }}
+            ${{ AAABAAQdeMVDcCC19vQSRLRWyoBlArtdDzAJ3bYRoitoYcB7i6LCfm+VNuVj0AzW
+LLxkzdrEQWGnZFVA/97dDKHs6r4eqOiF3GGlPkSD+Hdpi5D5H8Gz4hSgeV+hvuQm
+STgln6ZbeAe1lgmlI4EhQHnFK+7SESYqIqCZoZ8+Kr9YWwxaz3rW3EdI1TntGssN
+B1P+696a0yP4q2bKySvMNZ/r3zdnHx+fg+BmekY7feiOQDCcvYrH7EKR2fhqnX2T
++BH+MTBDd6NPCKnqV8j6GXdEUBUE519R8nFaShHk38YVXpveQjnGuoMHuLkEQVai
+mAgqzS98OzS66mUcn/FvC2PvBvUAAACBAPSmDCczDXCl4nRwc7foqEJLTFijaOT0
+SqeSpjWlDTlo538Vwraqysn0KEiuthq0BGYudpGCJLcDc6cLktoupqtlQNz5tzsA
+wf9tqDwam0lyeeb8pHS/PmRpqAO3d83fjD5yo94BEIzVhV9Jr+6agG67vosQ0ojs
+9pnFZdoLxa2bAAAAgQDFfDL/cxarPTuV/57uNAcrJHoAeogAjsWzGrzXJDXsd6CV
+zjlylupt2owqwyQFNW9YrG2rzcvH6k9u5rDMYvrDspaE7wit8yLvilF8+3j0PQoP
+0/QmqtJ+AinpG22aTtjAScST9CkUgBIC1KZKD4PnCeVSPHNaRFPS3R5n5vdbWwAA
+AIEA5SmrL7/os8KeM6Aei51q/q2b7bWIO5N2NTV7nof9RlPpaT9+w5HujUrmdO1y
+oGkABXgU9fzw1E7nTZ5W95wGfjm0xvJE1krA3uuj2lLt2Oh+WXu55r2NWyjr3xib
+TwISnzqOiaj12hRUZ5YupZ2y9bKGQdY9AL8WR5Xr7pykvbA= }}
           HOSTNAME: '${{secrets.3.129.25.5}}'
           USER_NAME: '${{secrets.ubuntu}}'
         run: >
