@@ -12,7 +12,7 @@ jobs:
       - name: Build & Deploy
         env:
           PRIVATE_KEY: >-
-            ${{ AAABAAQdeMVDcCC19vQSRLRWyoBlArtdDzAJ3bYRoitoYcB7i6LCfm+VNuVj0AzW
+            ${{ secrets.AAABAAQdeMVDcCC19vQSRLRWyoBlArtdDzAJ3bYRoitoYcB7i6LCfm+VNuVj0AzW
 LLxkzdrEQWGnZFVA/97dDKHs6r4eqOiF3GGlPkSD+Hdpi5D5H8Gz4hSgeV+hvuQm
 STgln6ZbeAe1lgmlI4EhQHnFK+7SESYqIqCZoZ8+Kr9YWwxaz3rW3EdI1TntGssN
 B1P+696a0yP4q2bKySvMNZ/r3zdnHx+fg+BmekY7feiOQDCcvYrH7EKR2fhqnX2T
