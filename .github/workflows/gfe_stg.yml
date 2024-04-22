@@ -10,20 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v2.308.0
+      - uses: actions/checkout@v3
       - name: Build & Deploy
         env:
             PRIVATE_KEY: ${{ secrets.GFE_STG_SERVER_KEY }}
-            HOSTNAME: ${{secrets.GFE_STG_URL}}
-            USER_NAME: ${{secrets.GFE_STG_USER}}
+            HOSTNAME: 34.233.161.125
+            USER_NAME: ubuntu
       
         run: |
           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
-          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
-
-              # Now we have got the access of EC2 and we will start the deploy .
+          ssh -i private_key ${USER_NAME}@${HOSTNAME} '
               cd /var/www/html/test_prg/Test_repo &&
-              git checkout main &&
-              git fetch --all &&
               git pull origin main &&
               '
