@@ -8,6 +8,7 @@ jobs:
   Deploy:
     name: Deploy to GFE STG
     runs-on: self-hosted
+    environment: production
     
     steps:
       - uses: actions/checkout@v3
